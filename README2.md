@@ -10,20 +10,27 @@
 3.把下载好的压缩包移动并解压文件夹到/root/autodl-tmp/Original
 
 4.提取每一帧：
+
 sh scripts/extract_frame.sh 61
 
 5.目标检测
+
 sh scripts/detection.sh 61
 
 6.特征提取
+
 sh scripts/embedding.sh 61
 
 7.姿态估计
+
 sh scripts/pose.sh 61
 
 8.协同跟踪
+
 source .venv/bin/activate
+
 sh scripts/tracking.sh 61
 
 9.生成结果
+
 python3 tools/generate_submission.py
