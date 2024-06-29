@@ -1,7 +1,10 @@
 # RIIPS_re
-租用AUTODL 的GPU
-4090 
-镜像选择RIIPS_RESULT
+替换默认python python3版本
+
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+
 
 1.绑定阿里云盘,把SCENE_061下载到autodl-tmp
 
