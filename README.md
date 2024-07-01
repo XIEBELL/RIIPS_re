@@ -1,4 +1,17 @@
 # RIIPS_re
+替换python版本，或者使用conda
+替换默认python python3版本
+```
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+```
+装python工具
+```
+pip install opencv-python-headless
+
+pip install "opencv-contrib-python-headless<4.3" -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 添加清华源
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -60,15 +73,7 @@ mim install "mmcv==1.7.0"
 
 ## 替换python，conda略过
 
-替换默认python python3版本
 
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
-
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
-
-pip install opencv-python-headless
-
-pip install "opencv-contrib-python-headless<4.3" -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 1.绑定阿里云盘,把SCENE_061下载到autodl-tmp
 
