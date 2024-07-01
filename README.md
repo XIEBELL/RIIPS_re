@@ -1,4 +1,9 @@
 # RIIPS_re
+安装BOT-SORT
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+python3 setup.py develop
+ pycocotools cython 
+
 替换默认python python3版本
 
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
