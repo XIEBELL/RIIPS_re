@@ -73,7 +73,7 @@ mim install "mmcv==1.7.0"
 ```
 
 ## 替换python，conda略过
-
+1
 
 
 1.绑定阿里云盘,把SCENE_061下载到autodl-tmp
