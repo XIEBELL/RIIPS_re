@@ -20,16 +20,17 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
 3090用这个OK
-conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 cudatoolkit=11.3
-4090用这个还没测试
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+4090用这个
+pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 ## 安装BOT-SORT
 ```
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip3 install tb-nightly setuptools==59.0.1  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-python3 setup.py develop
+python setup.py develop
 
 pip install pycocotools cython cython_bbox faiss-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
@@ -41,7 +42,6 @@ conda create --name openmmlab --clone botsort_env
 ```
 ## 安装torchreid
 ```
-pip3 install tb-nightly setuptools==59.0.1 
 
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
