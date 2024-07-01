@@ -8,9 +8,9 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 ```
 装python工具
 ```
-pip install opencv-python-headless
-
+pip install opencv-python-headless -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install "opencv-contrib-python-headless<4.3" -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 ```
 添加清华源
 ```
@@ -38,11 +38,9 @@ conda create --name openmmlab --clone botsort_env
 ```
 ## 安装torchreid
 ```
+pip3 install tb-nightly setuptools==59.0.1 
+
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-
-pip3 install tb-nightly setuptools==59.0.1
-
-pip install "opencv-contrib-python-headless<4.3" -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 python setup.py develop
 ```
