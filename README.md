@@ -102,6 +102,9 @@ sh scripts/pose.sh 61
 
 source .venv/bin/activate
 
+lanyun-gpu
+
+
 sh scripts/tracking.sh 61
 
 9.生成结果
