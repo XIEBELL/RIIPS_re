@@ -10,7 +10,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 ```
 pip install opencv-python-headless -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install "opencv-contrib-python-headless<4.3" -i https://pypi.tuna.tsinghua.edu.cn/simple
-
+pip install opencv-python install "opencv-python-headless<4.3"
 ```
 添加清华源
 ```
@@ -24,16 +24,24 @@ pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f ht
 4090用这个
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
+下载四个包：
+```
+git clone https://github.com/riips/AIC24_Track1_YACHIYO_RIIPS.git
+git clone https://github.com/NirAharon/BoT-SORT.git
 
+
+```
 ## 安装BOT-SORT
 ```
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install tb-nightly
+pip install pycocotools cython cython_bbox faiss-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install setuptools==59.5.0
+
 pip3 install setuptools==59.0.1  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 python setup.py develop
 
-pip install pycocotools cython cython_bbox faiss-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 复制一个环境到另外两个
@@ -115,26 +123,34 @@ python3 tools/generate_submission.py
 
 lanyun-gpu
 
-scene 61-64 3090 reid 70%
+scene 61-64 3090 reid 70% 掉线，准备下载后重配 7/2/9：43
 19863729336
 A6.
+scene 61
+13122719607
+A6.
 
-scene 65 4090 Det 50%
+scene 62
+
+qwer14222@qq.com
+
+scene 65 4090 Det 70%   7/2/9：43
 19218403844
 A6.
 
-scene 66-68 3090det 80%
+scene 66-68 3090 det 7/2/9：43
+66:
+det 100% emb 10%
+68:
+det 100% emb 10%
+67:
+det 100% emb 0%
 19539905257
 A6.
 
-scene 69 70 4090 det 100% emb 0%
+scene 69 70 4090 det 100% emb 2% 7/2/9：43
 16575634533
 A6.
 
-19231246558 
-Aa*
-需要实名认证，绑定手机号
 
-scene 71-72
-13122719607
-A6.
+
