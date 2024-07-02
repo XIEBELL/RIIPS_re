@@ -28,7 +28,8 @@ pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f 
 ## 安装BOT-SORT
 ```
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-pip3 install tb-nightly setuptools==59.0.1  -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install tb-nightly
+pip3 install setuptools==59.0.1  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 python setup.py develop
 
@@ -126,7 +127,7 @@ scene 66-68 3090det 80%
 19539905257
 A6.
 
-scene 69 70 4090det 90%
+scene 69 70 4090det 100% emb 0%
 16575634533
 A6.
 
