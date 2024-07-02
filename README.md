@@ -102,7 +102,7 @@ sh scripts/pose.sh 61
 
 source .venv/bin/activate
 
-lanyun-gpu
+
 
 
 sh scripts/tracking.sh 61
@@ -110,3 +110,26 @@ sh scripts/tracking.sh 61
 9.生成结果
 
 python3 tools/generate_submission.py
+
+
+lanyun-gpu
+
+scene 61-64 3090 reid 70%
+19863729336
+A6.
+
+scene 65 4090 Det 50%
+19218403844
+A6.
+
+scene 66-68 3090det 80%
+19539905257
+A6.
+
+scene 69 70 4090det 90%
+16575634533
+A6.
+
+19231246558 
+Aa*
+需要实名认证，绑定手机号
