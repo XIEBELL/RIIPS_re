@@ -23,12 +23,14 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 4090用这个
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+
 ```
 下载四个包：
 ```
 git clone https://github.com/riips/AIC24_Track1_YACHIYO_RIIPS.git
 git clone https://github.com/NirAharon/BoT-SORT.git
-
+git clone https://gitclone.com/github.com/KaiyangZhou/deep-person-reid.git
 
 ```
 ## 安装BOT-SORT
@@ -126,7 +128,7 @@ lanyun-gpu
 scene 61-64 3090 reid 70% 掉线，准备下载后重配 7/2/9：43
 19863729336
 A6.
-scene 61
+scene 61 4090 emb90%
 13122719607
 A6.
 
@@ -134,7 +136,7 @@ scene 62
 
 qwer14222@qq.com
 
-scene 65 4090 Det 70%   7/2/9：43
+scene 65 4090 Det 90%   7/2/13：43
 19218403844
 A6.
 
@@ -148,9 +150,12 @@ det 100% emb 0%
 19539905257
 A6.
 
-scene 69 70 4090 det 100% emb 2% 7/2/9：43
+scene 69 70 4090 
+69 det 100% emb 100% pose 配环境 7/2/15：43
+70 det 100% emb 80%  7/2/15：43
 16575634533
 A6.
+
 
 
 
