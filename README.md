@@ -128,13 +128,7 @@ lanyun-gpu
 scene 61-64 3090 reid 70% 掉线，准备下载后重配 7/2/9：43
 19863729336
 A6.
-scene 61 4090 emb90%
-13122719607
-A6.
 
-scene 62
-
-qwer14222@qq.com
 
 scene 65 4090 Det 100%   7/2/17.50 关机，余额70
 19218403844
@@ -142,27 +136,18 @@ A6.
 
 scene 66-68 3090 det 7/3/9：43
 66:
-det 100% emb 100% pose 0% 约20消失
+det 100% emb 100% 下载完，已关机
 68:
 det 100% emb 100% 下载完，已关机
 67:
-det 100% emb 100% pose 10% 约15小时
-19539905257
-A6.
+det 100% emb 100% 下载完，已关机
+
 
 scene 69 70 4090 
-69 det 100% emb 100%报错修改y2=y1  7/2/15：43
+69 det 100% emb 100%报错修改y2=y1  下载完，已关机
 
-70 det 100% emb 100%  下载完，已关机 7/2/15：43 
-16575634533 90￥
-A6.
-process 282000/298219
-Traceback (most recent call last):
-  File "torchreid/aic24_extract.py", line 94, in <module>
-    img_crop = img.crop((x1,y1,x2,y2))
-  File "/root/miniconda/envs/torchreid/lib/python3.8/site-packages/PIL/Image.py", line 1299, in crop
-    raise ValueError(msg)
-ValueError: Coordinate 'lower' is less than 'upper'
+70 det 100% emb 100%  下载完，已关机 
+
 
 
 
