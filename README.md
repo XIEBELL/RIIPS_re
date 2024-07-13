@@ -2,6 +2,7 @@
 替换python版本，或者使用conda
 替换默认python python3版本
 ```
+https://download.pytorch.org/whl/cu111/torch-1.9.1%2Bcu111-cp38-cp38-linux_x86_64.whl
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
 
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
